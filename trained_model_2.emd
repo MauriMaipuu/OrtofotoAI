@@ -1,0 +1,58 @@
+{
+    "ModelParameters": {
+        "pointrend": false,
+        "backbone": "resnet50",
+        "backend": "pytorch"
+    },
+    "Framework": "arcgis.learn.models._inferencing",
+    "ModelConfiguration": "_maskrcnn_inferencing",
+    "InferenceFunction": "[Functions]System\\DeepLearning\\ArcGISLearn\\ArcGISInstanceDetector.py",
+    "ModelType": "InstanceDetection",
+    "MaskRCNNkwargs": {},
+    "ExtractBands": [
+        0,
+        1,
+        2
+    ],
+    "SupportsVariableTileSize": true,
+    "Classes": [
+        {
+            "Value": 3,
+            "Name": "3",
+            "Color": [
+                97,
+                36,
+                52
+            ]
+        }
+    ],
+    "ModelFormat": "NCHW",
+    "MinCellSize": {
+        "x": 0.2,
+        "y": 0.2,
+        "spatialReference": {
+            "wkt": "PROJCS[\"Lambert_Conformal_Conic_2SP\",GEOGCS[\"GCS_GRS_1980_IUGG_1980\",DATUM[\"D_unknown\",SPHEROID[\"GRS80\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"false_easting\",500000.0],PARAMETER[\"false_northing\",6375000.0],PARAMETER[\"central_meridian\",24.0],PARAMETER[\"standard_parallel_1\",58.0],PARAMETER[\"standard_parallel_2\",59.33333333333334],PARAMETER[\"latitude_of_origin\",57.51755393055556],UNIT[\"Meter\",1.0]]"
+        }
+    },
+    "MaxCellSize": {
+        "x": 0.2,
+        "y": 0.2,
+        "spatialReference": {
+            "wkt": "PROJCS[\"Lambert_Conformal_Conic_2SP\",GEOGCS[\"GCS_GRS_1980_IUGG_1980\",DATUM[\"D_unknown\",SPHEROID[\"GRS80\",6378137.0,298.257222101]],PRIMEM[\"Greenwich\",0.0],UNIT[\"Degree\",0.0174532925199433]],PROJECTION[\"Lambert_Conformal_Conic\"],PARAMETER[\"false_easting\",500000.0],PARAMETER[\"false_northing\",6375000.0],PARAMETER[\"central_meridian\",24.0],PARAMETER[\"standard_parallel_1\",58.0],PARAMETER[\"standard_parallel_2\",59.33333333333334],PARAMETER[\"latitude_of_origin\",57.51755393055556],UNIT[\"Meter\",1.0]]"
+        }
+    },
+    "ArcGISLearnVersion": "2.0.1",
+    "monitored_valid_loss": 0.5442812442779541,
+    "ModelFile": "trained_model_2.pth",
+    "ImageHeight": 224,
+    "ImageWidth": 224,
+    "ImageSpaceUsed": "MAP_SPACE",
+    "LearningRate": "slice('1.3183e-05', '1.3183e-04', None)",
+    "ModelName": "MaskRCNN",
+    "backend": "pytorch",
+    "average_precision_score": {
+        "3": 0.7265195522256891
+    },
+    "resize_to": 224,
+    "IsMultispectral": false
+}
